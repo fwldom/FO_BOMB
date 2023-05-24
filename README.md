@@ -10,5 +10,6 @@ pip3 install -i req.txt
 python3 FWLDOM_BOMB.py
 Enter Number Phone 
 Enter Round
+Starting Bombing
 ```
 
