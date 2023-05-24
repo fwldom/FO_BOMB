@@ -214,7 +214,7 @@ def bombing2():
 if __name__ == "__main__":
     num = input( Fore.BLUE +'''***Enter your Number phone [-98:]
 [number:0999*******]---> : '''+ Fore.RESET)
-    yy = int(input(Fore.LIGHTGREEN_EX+"#*#Enter The Count of Round of Bombing .1 = almost 94 Sms ##>> "))
+    yy = int(input("#*#Enter The Count of Round of Bombing .1 = almost 94 Sms ##>> "))
     system('clear' if name == 'posix' else 'cls')
     print("*Phone Number:{}\n*Rounds: {}\n\n".format(num,yy))
     print("Starting Bombing 1 ...\n")
