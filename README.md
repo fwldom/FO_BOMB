@@ -6,6 +6,9 @@
 ```
 git clone https://github.com/fwldom/FWLDOM_BOMB.git
 cd FWLDOM_BOMB
-
+pip3 install -i req.txt
+python3 FWLDOM_BOMB.py
+Enter Number Phone 
+Enter Round
 ```
 
