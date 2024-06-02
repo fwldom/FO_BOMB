@@ -92,9 +92,9 @@ print(           " ██████  ██    ██ w  ██   ██  L   
 print(           " ██      ██    ██    ██   ██          ██       ██     █     █      ██   ██   ██")
 print(           " ██      ██    ██    ██   ██          ██     ██        █████       ██   ██   ██")
 print(           " ██       ███████████     ███████      ███████ \n" + Fore.RESET)
-print(Fore.CYAN +  " Name App : FSWMLSBOMB ; | App Version : 1.00.00 ; | More : 100 Api .")
+print(Fore.CYAN +  " Name App : FSWMLSBOMB ; | App Version : 1.1.1 ; | More : 100 Api .")
 print(Fore.GREEN + " Fwldom Hackers . For Woman Life Freedom . Are You Ready ?" + Fore.BLACK)
-print(Fore.LIGHTYELLOW_EX +   " WebSite : www.fwldom.rf.gd , GitHub : fwldom , Telegram : @Fwldom1")
+print(Fore.LIGHTYELLOW_EX +   " WebSite : www.fwldom.github.io , GitHub : fwldom , Telegram : @Fwldom")
 
 SMS_SERVICES = list(i[0] for i in getmembers(sms, isfunction))
 CALL_SERVICES = list(i[0] for i in getmembers(call, isfunction))
